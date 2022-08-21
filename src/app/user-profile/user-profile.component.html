@@ -1,0 +1,22 @@
+
+
+  <img [src]="User.photo" [alt]="User.name" /><br>
+
+  <p><input [(ngModel)]="User.quote"></p><br>
+
+  <p>Nom Prenom :  {{User.name}} {{User.firstName}}</p>
+
+  <br>
+   <!--age : {{User.age}}<br> -->
+
+   citation : {{User.quote}}
+   <br>
+   <p [hidden]="ageVisible">{{ User.age }}</p>
+
+
+
+   <button (click)="cacherAge()">Click</button>
+ <!--  <div [hidden]="!expression">{{val}}</div> -->
+
+
+
